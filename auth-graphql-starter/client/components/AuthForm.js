@@ -34,6 +34,12 @@ class AuthForm extends Component {
               onChange={e => this.setState({ email: e.target.value })}
             />
           </div>
+
+          <div className="errors">
+            {this.props.errors.map(error => (
+              <div key={error}>{error}</div>
+            ))}
+          </div>
           <button className="btn">Submit</button>
         </form>
       </div>
