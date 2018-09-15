@@ -31,7 +31,9 @@ class Header extends Component {
             <Link to="/signup">Signup</Link>
           </li>
           <li>
-            <a onClick={this.onLogoutClick.bind(this)}>>Login</a>
+            <Link to="/login" onClick={this.onLogoutClick.bind(this)}>
+              Login
+            </Link>
           </li>
         </div>
       );
